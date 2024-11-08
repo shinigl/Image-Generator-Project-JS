@@ -1,10 +1,10 @@
 let searchText = document.getElementById('search');
 let searchBtn = document.getElementById('btn');
 let container = document.getElementById('image-cont');
-let moreBtn = document.getElementById('more'); // Get the 'Show more' button
+let moreBtn = document.getElementById('more'); 
 let url = `https://api.unsplash.com/search/photos/?client_id=IwuwGZuEsbMF0ST4Vok_b2_UxkZ5-GuZgDOVF_TrmUE&query=`;
 let currentPage = 1; // Track the current page of results
-let query = ""; // Store the current search query
+let query = "nature"; // Store the current search query
 
 
 // Search button event listener
@@ -70,6 +70,10 @@ moreBtn.addEventListener("click", () => {
     currentPage++; 
     getImage(currentPage, query); // Fetch the next page of images
 });
+
+
+// Initial search with default query
+getImage(currentPage, query);
 
 
 

@@ -31,6 +31,7 @@ async function getImage(currentPage, query) {
         
         // Show images and update the "Show More" button state
         displayImage(data.results);
+        console.log(data.results);
         
         // If we have results, show the "Show More" button, otherwise hide it
         if (data.results.length > 0) {
@@ -55,7 +56,7 @@ function displayImage(data) {
 
         let link = document.createElement('a');
         link.href = image.links.html;
-        link.textContent = image.user.name || 'Untitled';
+        link.textContent = image?.alt_description || 'Untitled';
 
         card.appendChild(img);
         card.appendChild(link);

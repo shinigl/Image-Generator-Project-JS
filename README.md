@@ -3,7 +3,7 @@
 This is a simple web application that allows users to search for images using the [Unsplash API](https://unsplash.com/documentation). The app displays image results based on the search term provided by the user and loads additional images when the "Show More" button is clicked.
 
 ## Live Demo
-You can view the live version of this app [here](https://your-app-live-link.com).
+You can view the live version of this app [here](https://image-finder-aniket.netlify.app/).
 
 ## Features
 - Search images by keyword.
